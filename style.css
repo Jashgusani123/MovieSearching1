@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.spinarCon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.spinner {
+  background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(0, 225, 255));
+  width: 100px;
+  height: 100px;
+  animation: spinning82341 1.7s linear infinite, hue 1s ease-in-out infinite;
+  text-align: center;
+  border-radius: 50px;
+  filter: blur(1px);
+  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+}
+
+.spinner1 {
+  background-color: rgb(36, 36, 36);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  filter: blur(10px);
+}
+
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.toggleSwitch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox {
+  height: 70%;
+  display: flex;
+  width: 264px;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
+  gap: 8px;
+  box-shadow: 0px 0px 30px gray;
+  background: #2f3640;
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+/*hover effect*/
+.searchButton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+
+/*button pressing effect*/
+.searchButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 24px 46px 24px 26px;
+}
+
+.cssbuttons-io-button {
+  background: #a370f0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.toggleSwitch2 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  font-size: x-large;
+  color: #1A1A1A;
+}
+
+#home:hover {
+  animation-name: roter1;
+  animation-duration: 1s;
+  background-color: transparent;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes roter1 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.moviesCon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1%;
+  padding: 20px;
+}
+
+.movieCon {
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(129, 126, 126);
+}
+
+.movieCon #date {
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* This styling for main  */
+.heading {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+
+#name {
+  font-size: larger;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* this is footer  */
+footer button {
+  position: relative;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px #FFB700 solid;
+  overflow: hidden;
+}
+
+footer .text1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 22%;
+}
+
+footer .text2 {
+  position: absolute;
+  top: 25%;
+  left: -50px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+footer .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+footer .icon::before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  content: '';
+  width: 130px;
+  height: 33px;
+  border-radius: 30px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  ;
+}
+
+footer button:hover .icon {
+  transform: translateX(96px);
+  transition: transform 0.5s;
+}
+
+footer button:hover .text2 {
+  transform: translateX(100px);
+  transition: transform 0.6s;
+}
+
+footer button:active {
+  transform: scale(1.03);
+}
+
+main footer {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main {
+  height: fit-content;
+}
+
+main {
+  height: 100%;
+}
+
+.op {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width:700px) {
+  .searchBox {
+    width: 208px;
+  }
+
+  #home {
+    grid-area: "#home";
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+  }
+
+  .searchbar {
+    grid-area: ".searchbar";
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+
+  }
+
+  .toggleSwitch,
+  .toggleSwitch2 {
+    grid-area: "toggleSwitch2";
+    grid-area: "toggleSwitch";
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+  }
+
+  nav {
+    display: grid;
+    grid-template-areas: "", "#home", ""
+      ".searchbar", " ", ".toggleSwitch";
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .moviesCon {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: max-content;
+    grid-auto-flow: row;
+  }
+
+  #moviesCon footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+}

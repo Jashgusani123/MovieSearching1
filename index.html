@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="spinarCon" id="spinarCon">
+        <div class="spinner">
+            <div class="spinner1"></div>
+        </div>
+    </div>
+
+    <div id="main">
+        <header>
+            <nav>
+                <p id="home">MovieSearch</p>
+                <div class="searchbar">
+                    <div class="searchBox">
+
+                        <input class="searchInput" type="text" name="" id="searchInput" placeholder="Search something">
+                        <button class="searchButton" href="#" id="searchbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                fill="none">
+                                <g clip-path="url(#clip0_2_17)">
+                                    <g filter="url(#filter0_d_2_17)">
+                                        <path
+                                            d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
+                                            stroke="white" stroke-width="3" stroke-linecap="round"
+                                            stroke-linejoin="round" shape-rendering="crispEdges"></path>
+                                    </g>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139"
+                                        height="29.7139" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                        </feColorMatrix>
+                                        <feOffset dy="4"></feOffset>
+                                        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                        <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                        </feColorMatrix>
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_2_17">
+                                        </feBlend>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17"
+                                            result="shape"></feBlend>
+                                    </filter>
+                                    <clipPath id="clip0_2_17">
+                                        <rect width="28.0702" height="28.0702" fill="white"
+                                            transform="translate(0.403503 0.526367)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="toggleSwitch" id="modeBtn">
+                    <button class="cssbuttons-io-button">
+                        Dark Mode
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+
+                </div>
+                <div class="toggleSwitch2" id="modeBtn2">
+                    <button class="cssbuttons-io-button">
+                        Light Mode
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+
+                </div>
+            </nav>
+        </header>
+
+        <div class="heading">
+            <h1>Movies</h1>
+        </div>
+        <main>
+            <div class="moviesCon" id="moviesCon">
+                <div id="movieCon" class="movieCon"></div>
+            </div>
+        </main>
+
+
+
+    </div>
+    <footer>
+        <div class="footerText" id="footerText">
+            <p>This is My YouTube channel: </p>
+            <p>This is My Instagram Account: </p>
+        </div>
+        <div class="op">
+            <a href="https://www.youtube.com/channel/UCjCGz2ZOOtY2vOZSPoaOk6g">
+
+                <button id="youtube">
+                    <span class="icon"><svg fill="none" height="33" viewBox="0 0 120 120" width="33"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m120 60c0 33.1371-26.8629 60-60 60s-60-26.8629-60-60 26.8629-60 60-60 60 26.8629 60 60z"
+                                fill="#cd201f"></path>
+                            <path
+                                d="m25 49c0-7.732 6.268-14 14-14h42c7.732 0 14 6.268 14 14v22c0 7.732-6.268 14-14 14h-42c-7.732 0-14-6.268-14-14z"
+                                fill="#fff"></path>
+                            <path d="m74 59.5-21 10.8253v-21.6506z" fill="#cd201f"></path>
+                        </svg></span>
+                    <span class="text1">Subscribe</span>
+                    <span class="text2">469</span>
+                </button>
+            </a>
+            <a href="https://www.instagram.com/jash._.gusani?igsh=MTIzY3dhemhrYWd1MQ==">
+                <button id="insta">
+                    <span class="icon"><svg height="33" viewBox="0 0 128 128" width="33"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <linearGradient id="a" gradientTransform="matrix(1 0 0 -1 594 633)"
+                                gradientUnits="userSpaceOnUse" x1="-566.711" x2="-493.288" y1="516.569" y2="621.43">
+                                <stop offset="0" stop-color="#ffb900"></stop>
+                                <stop offset="1" stop-color="#9100eb"></stop>
+                            </linearGradient>
+                            <circle cx="64" cy="64" fill="url(#a)" r="64"></circle>
+                            <g fill="#fff">
+                                <path
+                                    d="m82.333 104h-36.666c-11.947 0-21.667-9.719-21.667-21.667v-36.666c0-11.948 9.72-21.667 21.667-21.667h36.666c11.948 0 21.667 9.719 21.667 21.667v36.667c0 11.947-9.719 21.666-21.667 21.666zm-36.666-73.333c-8.271 0-15 6.729-15 15v36.667c0 8.271 6.729 15 15 15h36.666c8.271 0 15-6.729 15-15v-36.667c0-8.271-6.729-15-15-15z">
+                                </path>
+                                <path
+                                    d="m64 84c-11.028 0-20-8.973-20-20 0-11.029 8.972-20 20-20s20 8.971 20 20c0 11.027-8.972 20-20 20zm0-33.333c-7.352 0-13.333 5.981-13.333 13.333 0 7.353 5.981 13.333 13.333 13.333s13.333-5.98 13.333-13.333c0-7.352-5.98-13.333-13.333-13.333z">
+                                </path>
+                                <circle cx="85.25" cy="42.75" r="4.583"></circle>
+                            </g>
+                        </svg></span>
+                    <span class="text1">Follow me</span>
+                    <span class="text2">1.2k</span>
+                </button>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
